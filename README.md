@@ -31,6 +31,7 @@ USAGE
 <!-- commands -->
 * [`alfred hello [FILE]`](#alfred-hello-file)
 * [`alfred help [COMMAND]`](#alfred-help-command)
+* [`alfred script FILENAME`](#alfred-script-filename)
 
 ## `alfred hello [FILE]`
 
@@ -68,4 +69,21 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
+
+## `alfred script FILENAME`
+
+create, edit or delete script
+
+```
+USAGE
+  $ alfred script FILENAME
+
+OPTIONS
+  -c, --create  create script
+  -d, --delete  delete script
+  -e, --edit    edit script
+  -h, --help    show CLI help
+```
+
+_See code: [src/commands/script.ts](https://github.com/dreamsparkx/alfred/blob/v0.0.0/src/commands/script.ts)_
 <!-- commandsstop -->
