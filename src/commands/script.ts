@@ -1,6 +1,8 @@
 import { Command, flags } from '@oclif/command'
 import { getScriptDir } from '../utils/dir'
 import { checkScriptExists } from '../utils/script'
+import { createFile } from '../utils/common'
+import { prompt } from 'inquirer'
 
 export default class Script extends Command {
   static description = 'create, edit or delete script'
@@ -37,10 +39,36 @@ export default class Script extends Command {
       flags,
     } = this.parse(Script)
     if (flags.create) {
-      console.log(getScriptDir())
-      if (checkScriptExists(fileName)) {
-        this.error('Script already exists')
-      }
+      this.create(fileName)
     }
+  }
+  async create(fileName: string) {
+    if (checkScriptExists(fileName)) {
+      this.error('Script already exists')
+    }
+    const response = await prompt([
+      {
+        name: 'scriptType',
+        message: 'select script type',
+        type: 'list',
+        choices: [
+          {
+            name: 'shell',
+          },
+          {
+            name: 'node',
+          },
+        ],
+      },
+    ])
+    let scriptData = ''
+    if (response.scriptType === 'shell') {
+      scriptData = `#!/bin/zsh\n`
+    } else if (response.scriptType === 'node') {
+      scriptData = `#!/usr/bin/env node\n`
+    }
+    createFile(`${getScriptDir()}/${fileName}`, scriptData, {
+      mode: '0755',
+    })
   }
 }
