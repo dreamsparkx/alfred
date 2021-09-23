@@ -29,29 +29,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`alfred hello [FILE]`](#alfred-hello-file)
 * [`alfred help [COMMAND]`](#alfred-help-command)
 * [`alfred script FILENAME`](#alfred-script-filename)
-
-## `alfred hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ alfred hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ alfred hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/dreamsparkx/alfred/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `alfred help [COMMAND]`
 
