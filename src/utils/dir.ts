@@ -12,8 +12,4 @@ function getScriptDir(): string {
   return `${getBinDir()}/scripts`
 }
 
-export {
-  getHomeDir,
-  getBinDir,
-  getScriptDir,
-}
+export {getHomeDir, getBinDir, getScriptDir}
