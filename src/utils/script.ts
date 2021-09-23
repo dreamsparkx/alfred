@@ -1,4 +1,4 @@
-import {exec} from 'shelljs'
+import { exec } from 'shelljs'
 
 function checkScriptExists(scriptName: string): boolean {
   const result = exec(`which ${scriptName}`, {
@@ -11,4 +11,4 @@ function checkScriptExists(scriptName: string): boolean {
   return false
 }
 
-export {checkScriptExists}
+export { checkScriptExists }

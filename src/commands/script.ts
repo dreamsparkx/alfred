@@ -1,6 +1,6 @@
-import {Command, flags} from '@oclif/command'
-import {getScriptDir} from '../utils/dir'
-import {checkScriptExists} from '../utils/script'
+import { Command, flags } from '@oclif/command'
+import { getScriptDir } from '../utils/dir'
+import { checkScriptExists } from '../utils/script'
 
 export default class Script extends Command {
   static description = 'create, edit or delete script'
@@ -29,11 +29,11 @@ export default class Script extends Command {
     }),
   }
 
-  static args = [{name: 'fileName', required: true}]
+  static args = [{ name: 'fileName', required: true }]
 
   async run() {
     const {
-      args: {fileName},
+      args: { fileName },
       flags,
     } = this.parse(Script)
     if (flags.create) {

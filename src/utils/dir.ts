@@ -1,4 +1,4 @@
-import {homedir} from 'os'
+import { homedir } from 'os'
 
 function getHomeDir(): string {
   return homedir()
@@ -12,4 +12,4 @@ function getScriptDir(): string {
   return `${getBinDir()}/scripts`
 }
 
-export {getHomeDir, getBinDir, getScriptDir}
+export { getHomeDir, getBinDir, getScriptDir }
