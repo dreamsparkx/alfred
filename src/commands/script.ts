@@ -31,22 +31,26 @@ export default class Script extends Command {
     }),
   }
 
-  static args = [{ name: 'fileName', required: true }]
+  static args = [{ name: 'fileName' }]
 
   async run() {
     const {
       args: { fileName },
       flags,
     } = this.parse(Script)
+    if (!fileName) {
+      this.error('No FileName provided', { exit: 1 })
+    }
     if (flags.create) {
       this.create(fileName)
     }
   }
+
   async create(fileName: string) {
     if (checkScriptExists(fileName)) {
       this.error('Script already exists')
     }
-    const response = await prompt([
+    const response: any = await prompt([
       {
         name: 'scriptType',
         message: 'select script type',

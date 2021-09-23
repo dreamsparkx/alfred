@@ -30,7 +30,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`alfred help [COMMAND]`](#alfred-help-command)
-* [`alfred script FILENAME`](#alfred-script-filename)
+* [`alfred script [FILENAME]`](#alfred-script-filename)
 
 ## `alfred help [COMMAND]`
 
@@ -49,13 +49,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
 
-## `alfred script FILENAME`
+## `alfred script [FILENAME]`
 
 create, edit or delete script
 
 ```
 USAGE
-  $ alfred script FILENAME
+  $ alfred script [FILENAME]
 
 OPTIONS
   -c, --create  create script
