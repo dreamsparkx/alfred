@@ -1,8 +1,11 @@
 import { Command, flags } from '@oclif/command'
-import { getScriptDir } from '../utils/dir'
-import { checkScriptExists } from '../utils/script'
-import { createFile } from '../utils/common'
 import { prompt } from 'inquirer'
+// eslint-disable-next-line node/no-missing-import
+import { getScriptDir } from '../utils/dir'
+// eslint-disable-next-line node/no-missing-import
+import { checkScriptExists } from '../utils/script'
+// eslint-disable-next-line node/no-missing-import
+import { createFile } from '../utils/common'
 
 export default class Script extends Command {
   static description = 'create, edit or delete script'
