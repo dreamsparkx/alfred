@@ -1,10 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import { prompt } from 'inquirer'
-// eslint-disable-next-line node/no-missing-import
 import { getScriptDir } from '../utils/dir'
-// eslint-disable-next-line node/no-missing-import
 import { checkScriptExists } from '../utils/script'
-// eslint-disable-next-line node/no-missing-import
 import { createFile } from '../utils/common'
 
 export default class Script extends Command {
