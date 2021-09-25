@@ -31,6 +31,7 @@ USAGE
 <!-- commands -->
 * [`alfred help [COMMAND]`](#alfred-help-command)
 * [`alfred mac-gatekeeper`](#alfred-mac-gatekeeper)
+* [`alfred qq [FILE]`](#alfred-qq-file)
 * [`alfred script [FILENAME]`](#alfred-script-filename)
 
 ## `alfred help [COMMAND]`
@@ -66,6 +67,22 @@ OPTIONS
 ```
 
 _See code: [src/commands/mac-gatekeeper.ts](https://github.com/dreamsparkx/alfred/blob/v0.0.0/src/commands/mac-gatekeeper.ts)_
+
+## `alfred qq [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ alfred qq [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/qq.ts](https://github.com/dreamsparkx/alfred/blob/v0.0.0/src/commands/qq.ts)_
 
 ## `alfred script [FILENAME]`
 

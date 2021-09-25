@@ -41,6 +41,8 @@ export default class MacGatekeeper extends Command {
       exec(`sudo xattr -rd com.apple.quarantine "${flags.bypass}"`, {
         async: false,
       })
+    } else {
+      this._help()
     }
   }
 }
