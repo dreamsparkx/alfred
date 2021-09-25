@@ -30,6 +30,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`alfred help [COMMAND]`](#alfred-help-command)
+* [`alfred mac-gatekeeper`](#alfred-mac-gatekeeper)
 * [`alfred script [FILENAME]`](#alfred-script-filename)
 
 ## `alfred help [COMMAND]`
@@ -48,6 +49,23 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
+
+## `alfred mac-gatekeeper`
+
+describe the command here
+
+```
+USAGE
+  $ alfred mac-gatekeeper
+
+OPTIONS
+  -b, --bypass=bypass  allow single app to bypass gatekeeper. Drag and Drop the app in terminal
+  -d, --disable        disable mac gatekeeper
+  -e, --enable         enable mac gatekeeper
+  -h, --help           show CLI help
+```
+
+_See code: [src/commands/mac-gatekeeper.ts](https://github.com/dreamsparkx/alfred/blob/v0.0.0/src/commands/mac-gatekeeper.ts)_
 
 ## `alfred script [FILENAME]`
 
