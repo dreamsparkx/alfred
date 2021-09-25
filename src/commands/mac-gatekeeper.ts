@@ -2,7 +2,7 @@ import { Command, flags } from '@oclif/command'
 import { exec } from 'shelljs'
 
 export default class MacGatekeeper extends Command {
-  static description = 'describe the command here'
+  static description = 'enable/disable gatekeeper of mac'
 
   static flags = {
     help: flags.help({ char: 'h' }),
